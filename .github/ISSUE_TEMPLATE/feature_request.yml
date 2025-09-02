@@ -8,7 +8,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to suggest an idea for SurrealDB!
+        Thanks for taking the time to suggest an idea for cbor.js!
   - type: textarea
     id: problem
     attributes:
@@ -36,9 +36,8 @@ body:
   - type: input
     id: version
     attributes:
-      label: SurrealDB version
-      description: Copy and paste the output of `surreal version`
-      placeholder: surreal 0.0.0 for macOS on aarch64
+      label: cbor.js version
+      placeholder: 1.0.0
     validations:
       required: true
   - type: input
@@ -49,14 +48,6 @@ body:
       placeholder: email@example.com
     validations:
       required: false
-  - type: checkboxes
-    id: check
-    attributes:
-      label: Is there an existing issue for this?
-      description: Please search [our issues](https://github.com/surrealdb/surrealdb/issues) to see if this bug already exists.
-      options:
-      - label: I have searched the existing issues
-        required: true
   - type: checkboxes
     id: terms
     attributes:

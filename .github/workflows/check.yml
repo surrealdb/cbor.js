@@ -46,6 +46,6 @@ jobs:
         run: bun run build
 
       - name: Validate publishing
-        run: bun publish --dry-run
+        run: bun publish --dry-run && bunx jsr publish --dry-run
         env:
           NPM_CONFIG_TOKEN: ${{ secrets.NPM_TOKEN }}
